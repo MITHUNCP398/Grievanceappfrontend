@@ -1,0 +1,60 @@
+
+
+.homepage-container {
+    background-image: url('https://www.utica.edu/sites/default/files/styles/width_960/public/2019-03/uc_superhero_-_give_day_image_no_text.jpg?h=9e4ada92&itok=3huxAB6b'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .admin-login {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  
+  .admin-login h2 {
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-btn {
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #e64a19;
+  }
+  
+  .welcome-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  /* .superhero-gif {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+  }
+   */

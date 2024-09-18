@@ -1,0 +1,43 @@
+
+.social-btn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+.footer-container {
+    margin-top: 0px; /* Adjust this value to control how much it moves up */
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mdb-footer {
+    position: relative;
+    bottom: -60px; 
+    margin-bottom: 0;
+  }
+  
+  .social-btn {
+    transition: transform 0.3s ease;
+  }
+  
+  .social-btn:hover {
+    transform: scale(1.1); /* Hover effect to scale icons */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
