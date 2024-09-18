@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import {server_url} from '../helper/helper.js'
 function Login() {
   const navigate = useNavigate();
   const [login, setLogin] = useState({
@@ -18,7 +18,7 @@ function Login() {
   const checkLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/user/login',login);
+      const res = await axios.post(`${server_url}/user/login`,login);
       console.log('res',res)
       if(res.status === 200) {
         navigate(`/dashboard`);

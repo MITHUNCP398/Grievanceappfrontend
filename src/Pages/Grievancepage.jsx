@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 import './Grievancepage.css'; 
-
+import {server_url} from '../helper/helper.js'
 const GrievancePage = () => {
   // Define the validation schema using Yup
   const validationSchema = Yup.object({
@@ -30,7 +30,7 @@ const GrievancePage = () => {
   // Handle form submission
   const handleSubmit = async (values, { resetForm }) => {
     console.log('Grievance submitted:', values);
-    const resp = await axios.post('http://localhost:3000/addgrievance', values);
+    const resp = await axios.post(`${server_url}/addgrievance`, values);
     if (resp.status === 200) {
       toast.success(resp.data.message, {
         autoClose: 3000,

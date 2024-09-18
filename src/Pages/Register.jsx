@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
-
+import {server_url} from '../helper/helper.js'
 function Register() {
   const navigate = useNavigate();
   const [data, setData] = useState({
@@ -58,7 +58,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post(`http://localhost:3000/user/register`, {
+      const res = await axios.post(`${server_url}/user/register`, {
         name: data.name,
         email: data.email,
         password: data.password,

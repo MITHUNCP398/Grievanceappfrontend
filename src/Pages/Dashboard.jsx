@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-
+import {server_url} from '../helper/helper.js'
 function Dashboard() {
   const [grievance, setGrievance] = useState([]);
   useEffect(() => {
@@ -12,7 +12,7 @@ function Dashboard() {
   },[])
   const fetchList = async () => {
     try {
-      const response = await fetch('http://localhost:3000/getgrievance');
+      const response = await fetch(`${server_url}/getgrievance`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -25,7 +25,7 @@ function Dashboard() {
 
   const deleteGrievance = async(id) => {
     try {
-    const response = await axios.delete(`http://localhost:3000/deletegrievance/${id}`);
+    const response = await axios.delete(`${server_url}/deletegrievance/${id}`);
     toast.success(response.data.message, {
       autoClose: 3000,
     });
