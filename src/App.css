@@ -46,3 +46,15 @@ form button {
 .custom-nav a{
   color: white;
 }
+
+.register-container {
+  display:flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.register:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
