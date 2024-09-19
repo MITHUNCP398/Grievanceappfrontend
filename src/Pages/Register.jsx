@@ -86,7 +86,7 @@ function Register() {
   return (
     <div
       style={{
-        background: "#007bff",
+        background: "#f5f7fa",
         width: "100%",
         // height: "100vh",
         overflow: "hidden",
