@@ -44,7 +44,7 @@ function Login() {
         className="fs-1 text-light text-center mt-5"
         style={{ fontFamily: "Tilt Prism", textShadow: "3px 2px 3px blue" }}
       >
-        Welcome to the World of super heros
+        Admin login
       </p>
       <div className="row">s
         <div className="col-sm-9 col-md-7 col-lg-6 col-xl-4 m-auto px-5">
@@ -103,9 +103,9 @@ function Login() {
                 </div>
               </form>
             </div>
-            <div>
+            {/* <div>
               <p className="register-container">Don't have an account? <span className="register" onClick={() => navigate('/reg')}> register</span>now</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
